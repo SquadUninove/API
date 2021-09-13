@@ -1,19 +1,27 @@
 # API <img align="center" alt="Marcos-Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
 
-Api do sistema de cardapio para restaurantes!
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/SquadUninove/API/blob/main/LICENSE) 
 
-#Tecnologias utilizadas:
-- Python 
+## Api do sistema de cardapio para restaurantes!
 
-- Django 
+## Sobre o Projeto
 
+Back-end do sistema de cardápio para restaurantes
+Desenvolvido para a aula de Projetos do curso de ADS da Universidade Nove de Julhgo
+
+
+
+## Tecnologias
+- Python
+- Django
 - Django Rest Framework
-
+- PostegreSQL
 - Heroku
 
 
 
-#Setup
+
+##Setup
 
 - Criar diretório do projeto (mkdir nome_projeto)
 - Criar venv (python -m venv venv)
@@ -28,13 +36,15 @@ requirements.txt
 - Criar app das rotas (python manage.py startapp cardapio)
 - Rodar o comando no terminal (python manage.py migrate) - criar as tabelas auth_user
 - Cadastrar um super user (python manage.py createsuperuser)
+- Install Rest Framework 
+- Rodar o comando (python manage.py runserver)
 
 
 
 
-#Documentação das Rotas (evidências)
+##Documentação das Rotas (evidências)
 
-#GetCardapio:
+##GetCardapio:
 
     [
 
