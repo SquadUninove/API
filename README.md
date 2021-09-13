@@ -6,8 +6,8 @@
 
 ## Sobre o Projeto
 
-Back-end do sistema de cardápio para restaurantes
-Desenvolvido para a aula de Projetos do curso de ADS da Universidade Nove de Julhgo
+Back-end do sistema de cardápio para restaurantes, 
+desenvolvido para a aula de Projetos do curso de ADS da Universidade Nove de Julho
 
 
 
@@ -21,7 +21,7 @@ Desenvolvido para a aula de Projetos do curso de ADS da Universidade Nove de Jul
 
 
 
-##Setup
+## Setup
 
 - Criar diretório do projeto (mkdir nome_projeto)
 - Criar venv (python -m venv venv)
@@ -42,9 +42,9 @@ requirements.txt
 
 
 
-##Documentação das Rotas (evidências)
+# Documentação das Rotas
 
-##GetCardapio:
+## GetCardapio:
 
     [
 
