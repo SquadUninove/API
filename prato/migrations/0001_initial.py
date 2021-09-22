@@ -8,17 +8,16 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('prato', '0001_initial'),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Cardapio',
+            name='Prato',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('nome', models.CharField(max_length=100)),
+                ('preco', models.DecimalField(blank=True, decimal_places=2, max_digits=5, null=True)),
                 ('descricao', models.CharField(max_length=100)),
-                ('pratos', models.ManyToManyField(to='prato.Prato')),
             ],
         ),
     ]

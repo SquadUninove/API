@@ -44,20 +44,21 @@ requirements.txt
 
 # Documentação das Rotas
 
-## GetCardapio:
+# Rotas-prato
+## GET LIST_PRATOS
+ http://127.0.0.1:8000/pratos
 
     [
-
     {
-        "id": 1,
-        "nome": "Fritas",
-        "descricao": "Batata frita com cheddar e bacon"
-    },
-    
-    {
-        "id": 2,
+        "id": 10,
         "nome": "Strogonoff",
-        "descricao": "Arroz, e fritas"
+        "preco": "25.90",
+        "descricao": "Acompanha arroz, fritas e salada"
     },
-
+    {
+        "id": 11,
+        "nome": "Macarrao",
+        "preco": "25.90",
+        "descricao": "fritas e salada"
+    }
     ]

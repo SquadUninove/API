@@ -15,14 +15,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from cardapio.views import CardapioViewset
+from cardapio.views import CardapioPratoViewset
 from rest_framework import routers
 
 
+
 router = routers.DefaultRouter()
-router.register('cardapio', CardapioViewset)
+router.register('crete', CardapioPratoViewset)
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include(router.urls)),
+    path('cardapioList/', include(router.urls)),
+    path('cardapio/', include('cardapio.urls')),
+    path('pratos/', include('prato.urls')),
+
 ]
