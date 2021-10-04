@@ -6,6 +6,8 @@ from cardapio.models import Cardapio
 from cardapio.serializer import CardapioSerializer
 from rest_framework.response import Response
 from prato.models import Prato
+from rest_framework.authentication import TokenAuthentication
+from rest_framework.permissions import IsAuthenticated
 
 
 
@@ -13,6 +15,8 @@ class CardapioPratoViewset(viewsets.ModelViewSet):
     """Exibindo todos os pratos do cardapio"""
     queryset = Cardapio.objects.all()
     serializer_class = CardapioSerializer
+    permission_classes = (IsAuthenticated,)
+    authentication_class = (TokenAuthentication,)
 
     @action(methods=['post'], detail=True)
     def associa_prato(self, request, pk):
@@ -25,6 +29,8 @@ class CardapioPratoViewset(viewsets.ModelViewSet):
 
 class CardapioCreate(generics.CreateAPIView):
     serializer_class = CardapioSerializer
+    permission_classes = (IsAuthenticated,)
+    authentication_class = (TokenAuthentication,)
 
     def post(self, request):
         serializer = self.serializer_class(data=request.data)
@@ -39,18 +45,26 @@ class CardapioCreate(generics.CreateAPIView):
 class CardapioList(generics.ListAPIView):
     queryset = Cardapio.objects.all()
     serializer_class = CardapioSerializer
+    permission_classes = (IsAuthenticated,)
+    authentication_class = (TokenAuthentication,)
 
 class CardapioDelete(generics.RetrieveDestroyAPIView):
     queryset = Cardapio.objects.all()
     serializer_class = CardapioSerializer
+    permission_classes = (IsAuthenticated,)
+    authentication_class = (TokenAuthentication,)
 
 class CardapioUpdate(generics.RetrieveUpdateAPIView):
     queryset = Cardapio.objects.all()
     serializer_class = CardapioSerializer
+    permission_classes = (IsAuthenticated,)
+    authentication_class = (TokenAuthentication,)
 
 class CardapioDetail(generics.RetrieveAPIView):
     queryset = Cardapio.objects.all()
     serializer_class = CardapioSerializer
+    permission_classes = (IsAuthenticated,)
+    authentication_class = (TokenAuthentication,)
 
 
 
