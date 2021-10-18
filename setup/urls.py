@@ -26,7 +26,7 @@ router = routers.DefaultRouter()
 router.register('crete', CardapioPratoViewset, basename='createee')
 router.register('createPedidoList', PedidoViewset, basename='listaaa')
 router.register('detail', CardapioDetail, basename='detail')
-router.register('update', CardapioUpdate, basename='update')
+#router.register('update', CardapioUpdate, basename='update')
 router.register('delete', CardapioDelete, basename='delete')
 router.register('list', CardapioList, basename='list')
 
