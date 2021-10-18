@@ -41,7 +41,9 @@ INSTALLED_APPS = [
     'knox',
     'cardapio',
     'prato',
+    'pedido',
     'corsheaders',
+
 ]
 
 MIDDLEWARE = [

@@ -15,21 +15,30 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from cardapio.views import CardapioPratoViewset
+from cardapio.views import CardapioPratoViewset, CardapioDetail, CardapioUpdate, CardapioDelete, CardapioList
+from pedido.views import PedidoViewset
 from rest_framework import routers
 from user.views import RegisterAPI, LoginAPI
 from knox import views as knox_views
 
 
 router = routers.DefaultRouter()
-router.register('crete', CardapioPratoViewset)
+router.register('crete', CardapioPratoViewset, basename='createee')
+router.register('createPedidoList', PedidoViewset, basename='listaaa')
+router.register('detail', CardapioDetail, basename='detail')
+router.register('update', CardapioUpdate, basename='update')
+router.register('delete', CardapioDelete, basename='delete')
+router.register('list', CardapioList, basename='list')
+
+
+
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('cardapioList/', include(router.urls)),
-    path('cardapio/', include('cardapio.urls')),
+    path('cardapio/', include(router.urls)),
     path('pratos/', include('prato.urls')),
+    path('pedidos/', include('pedido.urls')),
     path('api/register/', RegisterAPI.as_view(), name='register'),
     path('api/login/', LoginAPI.as_view(), name='login'),
     path('api/logout/', knox_views.LogoutView.as_view(), name='logout'),
