@@ -115,7 +115,7 @@ requirements.txt
 ## POST LOGOUT_USER
  https://api-squaduni.herokuapp.com/api/logout/ 
  
- 
+## Para usar todas as rotas é necessário gerar o token, via rota de login!
 ![alt text](https://cdn.discordapp.com/attachments/879382939341844522/915000306503417856/unknown.png)
  
  
