@@ -118,6 +118,6 @@ requirements.txt
 ## Para usar todas as rotas é necessário gerar o token, via rota de login!
 ![alt text](https://cdn.discordapp.com/attachments/879382939341844522/915000306503417856/unknown.png)
  
- 
+ ## Passar os parâmetros no headers, Key = Authorization | Value = Token (número do token) em cada teste de rota!
 ![alt text](https://cdn.discordapp.com/attachments/879382939341844522/914997792483721276/unknown.png)
 
