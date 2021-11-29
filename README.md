@@ -46,7 +46,7 @@ requirements.txt
 
 # Rotas-prato
 ## GET LIST_PRATOS
-https://api-squaduni.herokuapp.com/pratos
+ https://api-squaduni.herokuapp.com/pratos
 
     [
     {
@@ -65,21 +65,24 @@ https://api-squaduni.herokuapp.com/pratos
     
 ## POST CREATE_PRATOS
  https://api-squaduni.herokuapp.com/pratos/create/
- 
-   {
+    
+    {
           "nome": "Baiao de dois",
           "preco": "25.90",
           "descricao": "fritas e salada"
-   }
+    }
+    
+ 
    
 ## PUT UPDATE_PRATOS
-https://api-squaduni.herokuapp.com/pratos/update/1/ 
-   {
+ https://api-squaduni.herokuapp.com/pratos/update/1/ 
+
+    {
         "id": 1,
         "nome": "Baiao de dois",
         "preco": "25.90",
         "descricao": "fritas, salada e farofa"
-   }
+    }
    
 ## DELETE UPDATE_PRATOS
  https://api-squaduni.herokuapp.com/pratos/delete/1/   
@@ -87,3 +90,28 @@ https://api-squaduni.herokuapp.com/pratos/update/1/
   
 ## GET DETAIL_PRATOS
  https://api-squaduni.herokuapp.com/pratos/1/
+
+
+
+
+# Rotas-user
+## POST LOGIN_USER
+ https://api-squaduni.herokuapp.com/api/login/
+ 
+    {
+    "username": "admin",
+    "password": "admin"
+    }
+    
+## POST CREATE_USER
+ https://api-squaduni.herokuapp.com/api/register/
+ 
+    {
+    "username": "Daniel",
+    "password": "admin",
+    "email":"daniellindao@gmail.com"
+    }
+    
+## POST LOGOUT_USER
+ https://api-squaduni.herokuapp.com/api/logout/ 
+
