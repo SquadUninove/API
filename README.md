@@ -86,4 +86,4 @@ https://api-squaduni.herokuapp.com/pratos/update/1/
 
   
 ## GET DETAIL_PRATOS
- https://api-squaduni.herokuapp.com/pratos/1
+ https://api-squaduni.herokuapp.com/pratos/1/
