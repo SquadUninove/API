@@ -100,7 +100,7 @@ requirements.txt
  
     {
     "username": "admin",
-    "password": "admin"
+    "password": "123"
     }
     
 ## POST CREATE_USER
