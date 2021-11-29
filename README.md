@@ -116,6 +116,8 @@ requirements.txt
  https://api-squaduni.herokuapp.com/api/logout/ 
  
  
+![alt text](https://cdn.discordapp.com/attachments/879382939341844522/915000306503417856/unknown.png)
+ 
  
 ![alt text](https://cdn.discordapp.com/attachments/879382939341844522/914997792483721276/unknown.png)
 
