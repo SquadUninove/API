@@ -46,19 +46,44 @@ requirements.txt
 
 # Rotas-prato
 ## GET LIST_PRATOS
- http://127.0.0.1:8000/pratos
+https://api-squaduni.herokuapp.com/pratos
 
     [
     {
-        "id": 10,
-        "nome": "Strogonoff",
+        "id": 1,
+        "nome": "Baiao de dois",
         "preco": "25.90",
-        "descricao": "Acompanha arroz, fritas e salada"
+        "descricao": "fritas, salada e farofa"
     },
     {
-        "id": 11,
+        "id": 2,
         "nome": "Macarrao",
         "preco": "25.90",
         "descricao": "fritas e salada"
     }
     ]
+    
+## POST CREATE_PRATOS
+ https://api-squaduni.herokuapp.com/pratos/create/
+ 
+   {
+          "nome": "Baiao de dois",
+          "preco": "25.90",
+          "descricao": "fritas e salada"
+   }
+   
+## PUT UPDATE_PRATOS
+https://api-squaduni.herokuapp.com/pratos/update/1/ 
+   {
+        "id": 1,
+        "nome": "Baiao de dois",
+        "preco": "25.90",
+        "descricao": "fritas, salada e farofa"
+   }
+   
+## DELETE UPDATE_PRATOS
+ https://api-squaduni.herokuapp.com/pratos/delete/1/   
+
+  
+## GET DETAIL_PRATOS
+ https://api-squaduni.herokuapp.com/pratos/1
