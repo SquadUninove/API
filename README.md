@@ -90,30 +90,7 @@ requirements.txt
   
 ## GET DETAIL_PRATOS
  https://api-squaduni.herokuapp.com/pratos/1/
-
-
-
-
-# Rotas-user
-## POST LOGIN_USER
- https://api-squaduni.herokuapp.com/api/login/
  
-    {
-    "username": "admin",
-    "password": "123"
-    }
-    
-## POST CREATE_USER
- https://api-squaduni.herokuapp.com/api/register/
- 
-    {
-    "username": "Daniel",
-    "password": "admin",
-    "email":"daniellindao@gmail.com"
-    }
-    
-## POST LOGOUT_USER
- https://api-squaduni.herokuapp.com/api/logout/ 
  
 ## Para usar todas as rotas é necessário gerar o token, via rota de login!
 ![alt text](https://cdn.discordapp.com/attachments/879382939341844522/915000306503417856/unknown.png)
